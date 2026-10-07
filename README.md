@@ -35,4 +35,4 @@ Profile bottlenecks with traces and benchmarks to confirm impact.
 ## Highest-impact, lowest-effort improvement selected for this PR
 Memoization of repeated expensive computation.
 
-The implementation caches expensive transformations by input so identical inputs are processed once.
+The implementation caches expensive transformations by input and keeps the cache bounded so identical inputs are processed once without unbounded memory growth.
